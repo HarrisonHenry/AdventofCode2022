@@ -8,6 +8,5 @@ with open('Day1Part1.txt') as RawInput:
         else:
             i = int(i.strip('\n'))
             currentList.append(i)
-    finalList = sumList.sort()
-    print(finalList) 
-    print(sorted(sumList))    
+    sumList.sort()
+    print(sumList[-1] + sumList[-2] + sumList[-3])
